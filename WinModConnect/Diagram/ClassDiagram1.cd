@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WinModConnect.MotoSimPlugin" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAgACAoAABAAIACBAAAAACAARBEEAhCAAEAgAIAI=</HashCode>
+      <FileName>MotoSimPlugin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WinMODConnectorForm" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WinModConnect.WinMODConnectorForm" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAgggEAABDgAIpFkBGCAIQCCAIACMDSAhCgQJAUEmAA=</HashCode>
+      <FileName>WinMODConnectorForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MotoSimIOManagement" />
+      <Property Name="WinModIOManager" />
+      <Property Name="ControllerCOMMapping" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WinModConnect.MotoSimManager.MotoSimIOManagement" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAQIAAAAAAEAACAIBABCBAAAgAAACoAAAIABEAEAA=</HashCode>
+      <FileName>MotoSimManager\MotoSimIOManagement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MotoSimController" />
+      <Property Name="ControllerAddressMapping" />
+      <Property Name="ControllerCOMMapping" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WinModConnect.WinModManager.WinModIOManager" Collapsed="true">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAYAAABGkBCAAgIWECQgAIAIAAAgQQAACICA=</HashCode>
+      <FileName>WinModManager\WinModIOManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WinMODComm" />
+      <Property Name="WinMODCOMElement" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WinModConnect.MotoSimManager.MotoSimController" Collapsed="true">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAkgAAAAACBACAAAQADAAUAgAAAAAAABAAAAA=</HashCode>
+      <FileName>MotoSimManager\MotoSimController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MotoSimRobot" />
+      <Property Name="MotoSimIOSignal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WinModConnect.MotoSimManager.MotoSimIOSignal&lt;T&gt;">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>MotoSimManager\MotoSimIOSignal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinModConnect.MotoSimManager.MotoSimJointSignal&lt;T&gt;">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>MotoSimManager\MotoSimJointSignal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinModConnect.MotoSimManager.MotoSimRobot">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MotoSimManager\MotoSimRobot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MotoSimJointSignal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WinModConnect.WinModManager.WinMODComm" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAQAEAjABAIAAAVAokAAAQAAAAIAAQAAhAA=</HashCode>
+      <FileName>WinModManager\WinMODComm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WinModConnect.WinModManager.WinMODCOMElement" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAACAAAAQLAgAAAEAYEKgAAgUAEABEAABAAAAICA=</HashCode>
+      <FileName>WinModManager\WinMODCOMElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WinMODSignals" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WinModConnect.WinModManager.WinMODSignals&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>WinModManager\WinMODSignals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinModConnect.Mappers.ControllerAddressMapping" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAECCAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Mappers\ControllerAddressMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinModConnect.Mappers.ControllerCOMMapping" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAAA=</HashCode>
+      <FileName>Mappers\ControllerCOMMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinModConnect.GenericStaticClass" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgBAAAAAAAAA=</HashCode>
+      <FileName>GenericStaticClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
